@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GolFutbol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0b0f17">
+    <!-- Icono oficial de alta resolución para la PWA descargable en Celular y PC -->
+    <link rel="icon" type="image/png" href="https://postimg.cc">
+    <link rel="apple-touch-icon" href="https://postimg.cc">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo-area">
+            <span class="logo-dot"></span>
+            <h1>GolFutbol</h1>
+        </div>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar equipo... (ej. River)">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation-bar">
+        <button class="nav-link active" data-league="all">Todos</button>
+        <button class="nav-link" data-league="128">Libertadores</button>
+        <button class="nav-link" data-league="129">Sudamericana</button>
+        <button class="nav-link" data-league="103">Liga Argentina</button>
+    </nav>
+
+    <main class="content-container">
+        <div id="status-indicator" class="status-bar hidden"></div>
+        <div id="matches-grid" class="matches-layout">
+            <!-- Los partidos en tiempo real se inyectan dinámicamente aquí -->
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

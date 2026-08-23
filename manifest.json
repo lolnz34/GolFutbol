@@ -1,0 +1,23 @@
+{
+  "name": "GolFutbol App",
+  "short_name": "GolFutbol",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0b0f17",
+  "theme-color": "#0b0f17",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://postimg.cc",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "https://postimg.cc",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
